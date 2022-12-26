@@ -31,7 +31,11 @@ android {
   afterEvaluate {
     publishing{
       publications{
-        release(MavenPublication)
+        release(MavenPublication){
+          groupId = 'com.github.xiawenhui'
+          artifactId = 'JitPackTest'
+          version = '1.1.0'
+        }
       }
     }
   }
